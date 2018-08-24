@@ -7,12 +7,12 @@ var filesToCache = [
   './js/main.js',
   './css/main.css',
   './img/icon.png',
-  './img/icon-128x128.png',
-  './img/icon-144x144.png',
-  './img/icon-192x192.png',
-  './img/icon-48x48.png',
-  './img/icon-512x512.png',
-  './img/icon-96x96.png'
+  './img/icon-128-128.png',
+  './img/icon-144-144.png',
+  './img/icon-192-192.png',
+  './img/icon-48-48.png',
+  './img/icon-512-512.png',
+  './img/icon-96-96.png'
 ];
 
 self.addEventListener('install', function(e) {
