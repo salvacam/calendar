@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Notepad</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=5" />
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  	<meta name="theme-color" content="#CCC">
+
+	<link rel="icon" href="img/icon.png">
+  	
+  	<link rel="stylesheet" href="css/main.css">  	
+
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="description" content="Calendar">
+    <meta name="keywords" content="calendar, month, year" />
+
+    <meta name="author" content="Salvador Camacho" /> 
+	<style>
+		html {
+			box-sizing: border-box;
+			font-size: 10px;
+		}
+
+		body {
+			font-family: Roboto, Helvetica, Arial, sans-serif;
+			color: #333;
+			font-size: 1.6rem;
+			background-color: #FAFAFA;
+		}
+
+		.container {
+			width: 96%;
+			min-width: 240px;
+			margin: 1.6rem auto;
+			max-width: 42rem;
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div id="v-cal">
+			<div class="vcal-header">
+				<button class="vcal-btn" data-calendar-toggle="previous">
+					<svg height="24" version="1.1" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+					</svg>
+				</button>
+				<div class="vcal-header__label" data-calendar-label="month"></div>
+				<button class="vcal-btn" data-calendar-toggle="next">
+					<svg height="24" version="1.1" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+					</svg>
+				</button>
+			</div>
+			<div class="vcal-week">
+				<span>L</span>
+				<span>Ma</span>
+				<span>Mi</span>
+				<span>J</span>
+				<span>V</span>
+				<span>S</span>
+				<span>D</span>
+			</div>
+			<div class="vcal-body" data-calendar-area="month"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+
+</body>
+</html>
