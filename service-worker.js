@@ -1,11 +1,10 @@
 var cacheNamePre = 'calendar-';
-var cacheName = cacheNamePre + 'v0.1.01';
+var cacheName = cacheNamePre + 'v0.1.02';
 
 var filesToCache = [
   './',
   './index.html',
   './js/main.js',
-  './css/main.css',
   './img/icon.png',
   './img/icon-128-128.png',
   './img/icon-144-144.png',

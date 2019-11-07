@@ -19,12 +19,18 @@ var vanillaCalendar = {
   activeDates: null,
   date: new Date(),
   todaysDate: new Date(),
+  holiadays: ["2019-12-06", "2019-12-09", "2019-12-25", "2020-01-01", "2020-01-02", "2020-01-06",
+              "2020-02-28", "2020-04-09", "2020-04-10", "2020-05-01", "2020-06-11",
+              "2020-08-15", "2020-10-12", "2020-11-02", "2020-12-07", "2020-12-08", "2020-12-25",
+              "2021-01-01", "2021-01-06"],
 
   init: function () {
     this.date.setDate(1)
     this.createMonth()
     this.createListeners()
   },
+
+
 
   createListeners: function () {
     var _this = this
@@ -64,6 +70,8 @@ var vanillaCalendar = {
 
     if (this.date.toString() === this.todaysDate.toString()) {
       newDay.classList.add('vcal-date--today')
+    } else if (this.holiadays.includes(this.date.toJSON().substring(0,10))){
+      newDay.classList.add('vcal-date--holiday')
     }
 
     newDay.appendChild(dateEl)

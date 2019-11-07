@@ -2,10 +2,12 @@
   --vcal-bg-color: #fff;
   --vcal-border-radius: 0;
   --vcal-border-color: #e7e9ed;
-  --vcal-today-bg-color: #10989E;
+  --vcal-today-bg-color: #2196f3;
   --vcal-today-color: #fff;
   --vcal-selected-bg-color: #E7E9ED;
   --vcal-selected-color: #333;
+  --vcal-holiday-bg-color: #10989E;
+  --vcal-holiday-color: #fff;
 }
 
 #v-cal *, #v-cal *:before, #v-cal *:after {
@@ -104,4 +106,9 @@
 #v-cal .vcal-date--selected {
   background-color: var(--vcal-selected-bg-color);
   color: var(--vcal-selected-color);
+}
+
+#v-cal .vcal-date--holiday {
+  background-color: var(--vcal-holiday-bg-color);
+  color: var(--vcal-holiday-color);
 }
