@@ -1,5 +1,5 @@
 var cacheNamePre = 'calendar-';
-var cacheName = cacheNamePre + 'v0.1.02';
+var cacheName = cacheNamePre + 'v0.1.021';
 
 var filesToCache = [
   './',
